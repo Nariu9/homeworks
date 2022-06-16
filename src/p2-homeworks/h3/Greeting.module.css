@@ -1,0 +1,52 @@
+.container {
+    margin: 10px;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container button {
+    width: 65px;
+    background-color: #064003;
+    color: greenyellow;
+    text-align: center;
+    border: none;
+}
+
+.container button:hover {
+    background-color: green;
+}
+
+.container button:focus {
+    background-color: green;
+}
+
+.container button:disabled {
+    background-color: darkseagreen;
+}
+
+.container input {
+    background-color: #064003;
+    color: greenyellow;
+    outline: none;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.ok {
+    border: lime 2px inset;
+}
+
+.counter {
+    color: lime;
+}
+
+.notification {
+    width: 170px;
+    height: 20px;
+    margin-top: 5px;
+    color: red;
+}
