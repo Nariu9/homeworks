@@ -1,0 +1,42 @@
+.container {
+    max-width: 33%;
+    margin-left: 10px;
+}
+.affairs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.affairsButtons {
+    margin-top: 20px;
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+
+}
+
+.affairsButtons button {
+    background-color:#064003;
+    color: greenyellow;
+    text-align: center;
+    border: none;
+    width: 65px;
+    height: 20px;
+    transition-duration: 0.3s;
+}
+
+.affairsButtons button:hover {
+    background-color: green;
+}
+
+.affairsButtons button:focus {
+    background-color: green;
+}
+
+
+
+
+
+
+
