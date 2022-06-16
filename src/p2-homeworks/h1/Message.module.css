@@ -1,0 +1,50 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.avatar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.container {
+    position: relative;
+    margin-left: 10px;
+    max-width: 33%;
+    background-color: #064003;
+    border-radius: 10px 10px 10px 0;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, #064003 51%) no-repeat right bottom;
+}
+
+.container h3 {
+    font-size: 18px;
+    margin: 5px 15px;
+    color: mediumpurple;
+}
+
+.container .text {
+    margin: 0 15px;
+    color: greenyellow;
+    word-wrap: break-word;
+}
+
+.container time {
+    margin: 6px;
+    font-size: 12px;
+    color: darkseagreen;
+    float: right;
+}
