@@ -1,5 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -7,21 +9,24 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
-    onKeyDownHandler: (e: KeyboardEvent<HTMLInputElement>) => void
+    onEnterPress: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers, onKeyDownHandler} // деструктуризация пропсов
+    {name, setNameCallback, addUser, error, totalUsers, onEnterPress} // деструктуризация пропсов
 ) => {
-    const inputClass = !error ? s.ok : s.error // need to fix with (?:)
 
     return (
         <div className={s.container}>
-            <input value={name} onChange={setNameCallback} onKeyDown={onKeyDownHandler} className={inputClass}/>
-            <button onClick={addUser} disabled={!name}>add</button>
+            <div className={s.inputWrapper}>
+                <SuperInputText value={name}
+                                onChange={setNameCallback}
+                                onKeyPress={onEnterPress}
+                                error={error}/>
+            </div>
+            <SuperButton onClick={addUser} disabled={!name}>add</SuperButton>
             <span className={s.counter}>{totalUsers}</span>
-            <span className={s.notification}>{error}</span>
         </div>
     )
 }

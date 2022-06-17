@@ -1,4 +1,4 @@
-.affairWrapper {
+.container {
     display: flex;
     max-width: 300px;
     justify-content: space-between;
@@ -12,18 +12,9 @@
     width: 25%;
 }
 
-.affairWrapper button {
-    background-color: #064003;
-    color: greenyellow;
-    text-align: center;
-    border: none;
+.container button {
     width: 75px;
     height: 20px;
-    transition-duration: 0.3s;
-}
-
-.affairWrapper button:hover {
-    background-color: green;
 }
 
 .high {

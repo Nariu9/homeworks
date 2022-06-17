@@ -17,21 +17,8 @@
 }
 
 .affairsButtons button {
-    background-color:#064003;
-    color: greenyellow;
-    text-align: center;
-    border: none;
     width: 65px;
     height: 20px;
-    transition-duration: 0.3s;
-}
-
-.affairsButtons button:hover {
-    background-color: green;
-}
-
-.affairsButtons button:focus {
-    background-color: green;
 }
 
 
