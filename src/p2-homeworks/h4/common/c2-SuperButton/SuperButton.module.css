@@ -1,0 +1,32 @@
+.default {
+    background-color: #064003;
+    color: greenyellow;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition-duration: 0.5s;
+}
+
+.default:hover{
+    background: green;
+}
+
+.default:disabled {
+    background: darkseagreen;
+}
+
+.default:focus {
+    background: rebeccapurple;
+}
+
+.red {
+    background: red;
+    outline: none;
+    transition-duration: 0.5s;
+}
+
+.red:hover,
+.red:focus{
+    background: lightcoral;
+    color: white;
+}
