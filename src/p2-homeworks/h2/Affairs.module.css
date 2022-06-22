@@ -1,6 +1,6 @@
 .container {
     max-width: 33%;
-    margin-left: 10px;
+    margin: 10px;
 }
 .affairs {
     display: flex;

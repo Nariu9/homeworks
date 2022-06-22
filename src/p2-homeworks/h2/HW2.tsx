@@ -49,7 +49,6 @@ function HW2() {
         <div>
             <hr/>
             homeworks 2
-            <hr/>
 
             {/*should work (должно работать)*/}
             <Affairs
