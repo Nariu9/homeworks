@@ -1,8 +1,20 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
 .checkbox {
     width: 20px;
     height: 20px;
+    appearance: none;
+    background: #064003;
+}
+
+.checkbox:checked {
+    background-image: url("tick.png");
 }
 
 .spanClassName {
     color: lime;
+    margin: 5px;
 }

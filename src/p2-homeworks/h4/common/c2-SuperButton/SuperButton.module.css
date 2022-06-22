@@ -1,28 +1,54 @@
 .default {
     background-color: #064003;
     color: greenyellow;
-    text-align: center;
     border: none;
     outline: none;
-    transition-duration: 0.5s;
+    transition: ease-out 0.5s;
+    position: relative;
+    z-index: 1;
 }
 
-.default:hover{
-    background: green;
+.default:hover {
+    color: #fff;
+    cursor: pointer
+}
+
+.default:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: mediumorchid;
+}
+
+.default:hover::before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
 }
 
 .default:disabled {
     background: darkseagreen;
+    pointer-events: none;
 }
+
 
 .default:focus {
     background: rebeccapurple;
+    color: white;
 }
 
 .red {
     background: red;
     outline: none;
     transition-duration: 0.5s;
+    cursor: pointer
 }
 
 .red:hover,
