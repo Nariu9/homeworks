@@ -1,0 +1,43 @@
+.container {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: -5px;
+    transition: .7s ease;
+    padding-right: 8px;
+}
+
+.container:hover {
+    width: 420px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    float: right;
+    position: relative;
+}
+
+.links button a {
+    color: white;
+    text-decoration: none;
+}
+
+.link {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    background: #064003;
+    color: greenyellow;
+    border-radius: 5px;
+}
+
+.link a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.link a.active {
+    color: white;
+}
