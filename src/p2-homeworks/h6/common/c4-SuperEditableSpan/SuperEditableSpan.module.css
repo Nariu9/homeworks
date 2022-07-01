@@ -1,0 +1,8 @@
+.superSpan {
+    color: mediumpurple;
+}
+
+.superSpan::before {
+    content: "\270E";
+    margin-right: 5px;
+}
