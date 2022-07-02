@@ -19,11 +19,6 @@
     position: relative;
 }
 
-.links button a {
-    color: white;
-    text-decoration: none;
-}
-
 .link {
     width: 90px;
     height: 25px;
