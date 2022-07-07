@@ -1,0 +1,11 @@
+.select {
+    width: 100px;
+    height: 25px;
+    background: #064003;
+    color: greenyellow;
+}
+
+.select:focus {
+    border: lime 2px inset;
+    outline: none;
+}
