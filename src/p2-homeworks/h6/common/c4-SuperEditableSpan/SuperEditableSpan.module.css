@@ -1,5 +1,6 @@
 .superSpan {
     color: mediumpurple;
+    cursor: pointer;
 }
 
 .superSpan::before {
