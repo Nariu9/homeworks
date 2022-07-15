@@ -3,6 +3,7 @@
     height: 25px;
     background: #064003;
     color: greenyellow;
+    cursor: pointer;
 }
 
 .select:focus {
