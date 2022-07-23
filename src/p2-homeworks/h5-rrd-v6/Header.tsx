@@ -8,12 +8,12 @@ function Header() {
         <div className={s.container}>
             {/*// add NavLinks*/}
             <div className={s.links}>
-                <div className={s.link}><NavLink className={({isActive}) => isActive ? s.active : ''}
-                                                 to={PATH.PRE_JUNIOR}>pre-junior</NavLink></div>
-                <div className={s.link}><NavLink className={({isActive}) => isActive ? s.active : ''}
-                                                 to={PATH.JUNIOR}>junior</NavLink></div>
-                <div className={s.link}><NavLink className={({isActive}) => isActive ? s.active : ''}
-                                                 to={PATH.JUNIORPLUS}>junior+</NavLink></div>
+                <NavLink className={({isActive}) => isActive ? `${s.link} ${s.active}` : s.link}
+                         to={PATH.PRE_JUNIOR}>pre-junior</NavLink>
+                <NavLink className={({isActive}) => isActive ? `${s.link} ${s.active}` : s.link}
+                         to={PATH.JUNIOR}>junior</NavLink>
+                <NavLink className={({isActive}) => isActive ? `${s.link} ${s.active}` : s.link}
+                         to={PATH.JUNIORPLUS}>junior+</NavLink>
                 <div className={s.link}>Hover me!</div>
             </div>
 
