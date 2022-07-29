@@ -1,0 +1,16 @@
+.container {
+    margin: 10px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container button {
+    height: 20px;
+}
+
+s.preloader {
+    width: 40px;
+    height: 40px;
+}
