@@ -26,7 +26,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                                 error={error}/>
             </div>
             <SuperButton onClick={addUser} disabled={!name}>add</SuperButton>
-            <span className={s.counter}>{totalUsers}</span>
+            <span>{totalUsers}</span>
         </div>
     )
 }
