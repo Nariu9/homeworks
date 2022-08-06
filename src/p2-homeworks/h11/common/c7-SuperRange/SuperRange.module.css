@@ -1,0 +1,25 @@
+.range {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    width: 150px;
+}
+
+
+.range::-webkit-slider-thumb {
+    background: mediumpurple;
+    cursor: pointer;
+    width:10px;
+    height: 20px;
+    border-radius: 3px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: 0.3s;
+}
+.range::-webkit-slider-thumb:hover {
+    box-shadow: rgba(169, 102, 246, 0.31) 0 0 0 8px;
+}
