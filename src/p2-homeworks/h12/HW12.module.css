@@ -24,3 +24,12 @@
     color: darkslateblue;
     font-weight: bold;
 }
+
+.blue {
+    background: royalblue;
+}
+
+.blue-text {
+    color: yellow;
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-export type ThemeType = 'dark' | 'red' | 'some'
+export type ThemeType = 'dark' | 'red' | 'some' | 'blue'
 
 type initStateType = {
     theme: ThemeType
