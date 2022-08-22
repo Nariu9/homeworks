@@ -4,6 +4,7 @@ import SuperCheckbox from '../h4/common/c3-SuperCheckbox/SuperCheckbox';
 import {RequestsAPI} from './requests-api';
 import {AxiosError} from 'axios';
 import s from './Request.module.css'
+import spinner from '../h10/spinner.svg'
 
 
 const Request = () => {
@@ -16,17 +17,18 @@ const Request = () => {
             const fetchData = async () => {
                 try {
                     const result = await RequestsAPI.sendStatus(checked)
-                    setData(result.data.errorText)
+                    setData(`${result.data.errorText}, ${result.data.info}`)
                 } catch (error) {
                     if (error instanceof AxiosError) {
                         console.log({...error});
                         console.log(error.response ? error.response.data.errorText : error.message);
-                        setData(error.response?.data.errorText)
+                        setData(`${error.response?.data.errorText}, ${error.response?.data.info}`)
                     }
+                } finally {
+                    setRequest(false)
                 }
             }
             fetchData()
-            setRequest(false)
         }
     }, [request])
 
@@ -36,8 +38,10 @@ const Request = () => {
 
     return (
         <div className={s.container}>
-            <SuperCheckbox checked={checked} onChangeChecked={setChecked}>{data}</SuperCheckbox>
-            <SuperButton onClick={sendStatus}>send</SuperButton>
+            <div className={s.content}>{request ? <img src={spinner} alt="preloader"/> :
+                <SuperCheckbox checked={checked} onChangeChecked={setChecked}>{data}</SuperCheckbox>}
+            </div>
+            <SuperButton onClick={sendStatus} disabled={request}>send</SuperButton>
 
         </div>
     );
